@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    background-color: bisque;
+    margin: 5px;
+    padding: 5px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

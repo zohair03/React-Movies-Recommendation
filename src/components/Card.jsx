@@ -1,16 +1,15 @@
-import React from "react"
+import React from "react";
 
-const Card = () => {
-    return (
-      <div>
-        <h3>Movie title</h3>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWL2mlkaimmWp_LFD-gFaPQJnrQ-c6rUHbbg&s"
-          alt="spiderman"
-        />
-        <p>ratings: 4.5</p>
-      </div>
-    );
-}
+const Card = ({ title, poster, releaseDate, overview, backdrop }) => {
+  return (
+    <div className="container">
+      <h3>{title}</h3>
+      <img src={`https://image.tmdb.org/t/p/w500/${backdrop}`} />
+      <img src={`https://image.tmdb.org/t/p/w500/${poster}`} />
+      <p>{overview}</p>
+      <p>release date: {releaseDate}</p>
+    </div>
+  );
+};
 
 export default Card;
